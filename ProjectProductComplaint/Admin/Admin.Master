@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="ProjectProductComplaint.Admin.Admin" %>
+
+<!DOCTYPE html>
+
+
+
+
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="css/1.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+   
+        <div class="wrapper">
+            <div class="menu">
+                <center><h1>Welcome Admin page</h1></center>
+                <ul>
+                    <li><h1><a href="../GuestMaster/Default.aspx">Home</a></h1></li>
+                    <li><a href="Confirmuser.aspx">Confirm User</a></li>
+                    <li><a href="product.aspx">Product Details</a></li>    
+                    <li><a href="viewcomplaint.aspx">Complaint Details</a></li>
+                    <li><a href="viewquery.aspx">Query Details</a></li>
+
+
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="clear"></div>
+            <div class="content">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="clear"></div>
+            <div class="footer">
+                <h2>Copyright@ABC.com</h2>
+            </div>
+        </div>
+   
+</body>
+</html>

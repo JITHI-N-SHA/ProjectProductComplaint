@@ -1,0 +1,1 @@
+﻿select  c.queryid,c.userid, p.productid,p.productname,u.name, c.query, c.replay from Product p  INNER JOIN query c  ON p.productid = c.productid INNER JOIN Registration u ON c.userid = u.id;
